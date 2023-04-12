@@ -1,0 +1,38 @@
+{
+    "name": "xrplwin/xrpl-ledger-time",
+    "description": "This package will extract ledger index by giving date and time as input. ",
+    "keywords": ["xrpl", "composer", "package", "ripple", "rippled", "xrp", "ledger", "ledgerindex", "index"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+      {
+        "name": "Zvjezdan Grgurić",
+        "email": "zgrguric@xrplwin.com"
+      }
+    ],
+    "homepage": "https://github.com/XRPLWin",
+    "autoload": {
+      "psr-4": {
+          "XRPLWin\\XRPLLedgerTime\\": "src/"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "XRPLWin\\XRPLLedgerTime\\Tests\\": "tests/"
+      }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+      "php": "^8.1.0",
+      "xrplwin/xrpl": ">=0.0.11",
+      "nesbot/carbon": "^2.66"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "^9.5",
+      "symfony/var-dumper": "^6.1"
+    },
+    "scripts": {
+      "test": "./vendor/bin/phpunit --testdox"
+    }
+  }
