@@ -1,7 +1,7 @@
 {
-    "name": "xrplwin/xrpl-ledger-time",
+    "name": "xrplwin/xrpl-ledgertime",
     "description": "This package will extract ledger index by giving date and time as input. ",
-    "keywords": ["xrpl", "composer", "package", "ripple", "rippled", "xrp", "ledger", "ledgerindex", "index"],
+    "keywords": ["xrpl", "composer", "package", "rippled", "xrp", "ledger", "ledgerindex", "index", "time", "carbon", "datetime"],
     "license": "MIT",
     "type": "library",
     "authors": [
