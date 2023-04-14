@@ -6,7 +6,7 @@ Basically `2023-04-13 15:00:00 UTC` will give you `79077871`
 
 ## Why?
 
-There is no available XRPL API method to extract exact time of ledger. Say you wan't to query list of account transactions between Jan 1, 2022 08:00:00 and 12:00:00. For that query you need to provide in `account_tx` method `ledger_index_min` and `ledger_index_max`.
+There is no available XRPL API method to extract exact time of ledger. Say you want to query list of account transactions between Jan 1, 2022 08:00:00 and 12:00:00. For that query you need to provide in `account_tx` method `ledger_index_min` and `ledger_index_max`.
 
 You can lookup local pre-synced database to get required ledger indexes and add them to query.
 
