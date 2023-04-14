@@ -1,3 +1,7 @@
+![main workflow](https://github.com/XRPLWin/XRPL-LedgerTime/actions/workflows/main.yml/badge.svg)
+[![GitHub license](https://img.shields.io/github/license/XRPLWin/XRPL-LedgerTime)](https://github.com/XRPLWin/XRPL-LedgerTime/blob/main/LICENSE)
+[![Total Downloads](https://img.shields.io/packagist/dt/xrplwin/xrpl-ledgertime.svg?style=flat)](https://packagist.org/packages/xrplwin/xrpl-ledgertime)
+
 # XRPL Ledger Time
 
 This package will extract ledger index by giving date and time as input.
