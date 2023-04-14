@@ -30,15 +30,19 @@ A rippled server relies on maintaining the correct time. It is recommended that 
 
 Option 1 (datetime to ledgerindex)
 ```PHP
+use XRPLWin\XRPLLedgerTime\XRPLLedgerTimeSyncer;
+use Carbon\Carbon;
+
 $syncer = new XRPLLedgerTimeSyncer(); //init syncer
 
-# Option 1 (datetime to ledgerindex)
 $datetime = Carbon::create(2023, 4, 13, 15, 0, 0, 'UTC'); //create Carbon datetime object
 $ledgerIndex = $syncer->datetimeToLedgerIndex($datetime); //will return: 79077871
 ```
 
 Option 2 (ledgerindex to datetime)
 ```PHP
+use XRPLWin\XRPLLedgerTime\XRPLLedgerTimeSyncer;
+
 $syncer = new XRPLLedgerTimeSyncer(); //init syncer
 $ledgerIndex = $syncer->ledgerIndexToCarbon(79077871);
 ```
@@ -53,7 +57,6 @@ $syncer = new XRPLLedgerTimeSyncer(
   [
     # Following values are defined by default, uncomment to override
     # These options will be passed to \XRPLWin\XRPL\Client
-    //'endpoint_reporting_uri' => 'http://s1.ripple.com:51234',
     //'endpoint_fullhistory_uri' => 'https://xrplcluster.com'
   ]
 ); 
