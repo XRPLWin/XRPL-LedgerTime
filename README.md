@@ -50,7 +50,7 @@ Option 2 (ledgerindex to datetime)
 use XRPLWin\XRPLLedgerTime\XRPLLedgerTimeSyncer;
 
 $syncer = new XRPLLedgerTimeSyncer(); //init syncer
-$ledgerIndex = $syncer->ledgerIndexToCarbon(79077871);
+$carbon = $syncer->ledgerIndexToCarbon(79077871);
 ```
 
 Options overview:
